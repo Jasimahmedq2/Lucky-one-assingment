@@ -1,0 +1,9 @@
+.product-container img{
+width:75%;
+}
+.product-container{
+  width: 350px;
+  height: 650px;
+  border: 1px solid gray;
+  border-radius: 15px;
+}
