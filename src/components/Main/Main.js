@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../Cartdetails/Card';
 import Product from '../Product/Product';
+import './Main.css'
 
 const Main = () => {
  const [products, setproducts] = useState([])
@@ -19,7 +20,7 @@ const Main = () => {
  }
   return (
     <div className='row'>
-      <div className='col-10 row'>
+      <div className='col-9 row'>
        {
           products.map(product => <Product product={product} 
             key={product.id}
@@ -29,7 +30,7 @@ const Main = () => {
       </div>
      
    
-        <div className='col-2'>
+        <div className='col-3 details-style'>
           <Card card={card}></Card>
           
           
