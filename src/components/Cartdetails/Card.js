@@ -16,7 +16,7 @@ const Card = (props) => {
   }
   return (
     <div>
-      <h3 className='text-center text-primary'>product summary</h3>
+      <h3 className='text-center'>select product</h3>
       <div className='product-name'>
       {
         card.map(item => <h3 key={item.id}>{item.title}</h3>)
@@ -25,7 +25,7 @@ const Card = (props) => {
       <button className='btn btn-primary' onClick={()=> random()}>choose one</button>
       <br />
       <button className='btn btn-primary mt-2' onClick={removeData}>reset</button>
-      <h3 className='Randompd'>{Pd.title}</h3>
+      <h3 className='Randompd mt-2'>{Pd.title}</h3>
       </div>
   );
 };
