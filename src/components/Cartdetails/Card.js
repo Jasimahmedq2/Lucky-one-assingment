@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Card.css'
 
 const Card = (props) => {
-  const {card} = props;
+  const {card, setcard} = props;
   const [Pd, setPd] = useState([])
   const random = () => {
   const newItem = card[Math.round(Math.random() * card.length)]
@@ -10,6 +10,7 @@ const Card = (props) => {
 
   }
   const removeData =() => {
+   setcard([])
    setPd([])
   }
   return (

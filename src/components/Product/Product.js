@@ -1,5 +1,6 @@
 import React from 'react';
 import './Product.css'
+import {AiOutlineShoppingCart} from "react-icons/ai"
 
 const Product = (props) => {
   const {AddToCard, product} = props 
@@ -15,7 +16,7 @@ const Product = (props) => {
     <h5 className="card-text">price: ${price}</h5>
     <h5>id: {id}</h5>
     
-    <button className="btn btn-primary" onClick={()=>AddToCard(product)}>Add to card</button> 
+    <button className="btn btn-primary" onClick={()=>AddToCard(product)}>Add to card <AiOutlineShoppingCart></AiOutlineShoppingCart></button> 
   </div>
   </div>
       

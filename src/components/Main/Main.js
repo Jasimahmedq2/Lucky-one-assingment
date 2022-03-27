@@ -20,7 +20,7 @@ const Main = () => {
  }
   return (
     <div className='row'>
-      <div className='col-9 row'>
+      <div className='col-12 col-md-10 col-lg-9 row'>
        {
           products.map(product => <Product product={product} 
             key={product.id}
@@ -30,8 +30,8 @@ const Main = () => {
       </div>
      
    
-        <div className='col-3 details-style h-50'>
-          <Card card={card}></Card>
+        <div className='col-10 col-md-2 col-lg-2 details-style h-50'>
+          <Card card={card} setcard={setcard}></Card>
           
           
         </div>
