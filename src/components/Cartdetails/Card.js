@@ -21,7 +21,8 @@ const Card = (props) => {
        }
        </div>
       <button className='btn btn-primary' onClick={()=> random()}>random</button>
-      <button className='btn btn-primary ms-2' onClick={removeData}>remove</button>
+      <br />
+      <button className='btn btn-primary mt-2' onClick={removeData}>remove</button>
       <h3>{Pd.title}</h3>
       </div>
   );
