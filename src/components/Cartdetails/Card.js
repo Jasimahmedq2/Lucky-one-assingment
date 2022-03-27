@@ -3,7 +3,7 @@ import './Card.css'
 
 const Card = (props) => {
   const {card, setcard} = props;
-  const [Pd, setPd] = useState('')
+  const [Pd, setPd] = useState([])
   const random = () => {
   const newItem = card[Math.round(Math.random() * card.length)]
    setPd(newItem)
@@ -11,7 +11,8 @@ const Card = (props) => {
   }
   const removeData =() => {
    setcard([])
-   setPd('')
+   setPd([])
+   
   }
   return (
     <div>
@@ -21,10 +22,10 @@ const Card = (props) => {
         card.map(item => <h3 key={item.id}>{item.title}</h3>)
        }
        </div>
-      <button className='btn btn-primary' onClick={()=> random()}>random</button>
+      <button className='btn btn-primary' onClick={()=> random()}>choose one</button>
       <br />
-      <button className='btn btn-primary mt-2' onClick={removeData}>remove</button>
-      <h3>{Pd.title}</h3>
+      <button className='btn btn-primary mt-2' onClick={removeData}>reset</button>
+      <h3 className='Randompd'>{Pd.title}</h3>
       </div>
   );
 };
