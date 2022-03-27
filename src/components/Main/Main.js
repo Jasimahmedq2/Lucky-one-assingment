@@ -30,7 +30,7 @@ const Main = () => {
       </div>
      
    
-        <div className='col-3 details-style'>
+        <div className='col-3 details-style h-50'>
           <Card card={card}></Card>
           
           
