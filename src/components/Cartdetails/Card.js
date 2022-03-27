@@ -3,14 +3,14 @@ import './Card.css'
 
 const Card = (props) => {
   const {card} = props;
-  const [Pd, setPd] = useState([""])
+  const [Pd, setPd] = useState([])
   const random = () => {
-  const newItem = card[  Math.round(Math.random() * card.length)]
-setPd(newItem.title)
+  const newItem = card[Math.round(Math.random() * card.length)]
+   setPd(newItem)
 
   }
   const removeData =() => {
-    setPd("")
+   setPd([])
   }
   return (
     <div>
@@ -22,7 +22,7 @@ setPd(newItem.title)
        </div>
       <button className='btn btn-primary' onClick={()=> random()}>random</button>
       <button className='btn btn-primary ms-2' onClick={removeData}>remove</button>
-      <h3>{Pd}</h3>
+      <h3>{Pd.title}</h3>
       </div>
   );
 };
